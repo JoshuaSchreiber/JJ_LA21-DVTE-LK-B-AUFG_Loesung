@@ -1,3 +1,5 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Person {
@@ -17,8 +19,14 @@ public class Person {
         personenID = Integer.parseInt(parts[0]);
         nachname = parts[1];
         vorname = parts[2];
-        String[] dateParts = parts[3].split(".");
-        gebDate = new Date(Integer.parseInt(dateParts[2]), Integer.parseInt(dateParts[1]), Integer.parseInt(dateParts[0]));
+
+        String dateStr = parts[3];
+        SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
+        try {
+            gebDate = formatter.parse(dateStr);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     public String toString(){
