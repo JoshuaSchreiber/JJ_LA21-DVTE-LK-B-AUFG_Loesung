@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb653aab-a662-4338-aabb-26251bd881dd" name="Changes" comment="d">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Impfung.java" afterDir="false" />
+    <list default="true" id="bb653aab-a662-4338-aabb-26251bd881dd" name="Changes" comment="einladen() von Impfzentrumverwaltung noch korigieren, segmentieren und kommentieren">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImpfzentrumVerwaltung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImpfzentrumVerwaltung.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Starter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +110,7 @@
       <workItem from="1720435415478" duration="614000" />
       <workItem from="1722880067570" duration="1620000" />
       <workItem from="1723038553923" duration="4224000" />
-      <workItem from="1723120142894" duration="4682000" />
+      <workItem from="1723120142894" duration="6429000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <option name="closed" value="true" />
@@ -131,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723043807614</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="einladen() von Impfzentrumverwaltung noch korigieren, segmentieren und kommentieren">
+      <option name="closed" value="true" />
+      <created>1723125584863</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723125584863</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +144,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="d" />
-    <option name="LAST_COMMIT_MESSAGE" value="d" />
+    <MESSAGE value="einladen() von Impfzentrumverwaltung noch korigieren, segmentieren und kommentieren" />
+    <option name="LAST_COMMIT_MESSAGE" value="einladen() von Impfzentrumverwaltung noch korigieren, segmentieren und kommentieren" />
   </component>
 </project>

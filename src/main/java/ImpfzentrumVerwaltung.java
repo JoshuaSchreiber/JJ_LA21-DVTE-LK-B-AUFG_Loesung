@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ImpfzentrumVerwaltung {
     public static final int STRASSEN = 2;
-    public static final int PERSONEN_TAG_STRASSE = 15;
+    public static final int PERSONEN_TAG_STRASSE = 13;
     private List<Person> personen;
     private List<Impfstrasse> strassen;
 
@@ -29,8 +29,12 @@ public class ImpfzentrumVerwaltung {
         List<Person> secondPriority = new ArrayList<>();
 
         for(int person = 0; person < personen.size(); person++){
+
+            // Time sine last ImpfTermin
             long timeDifferenceInMillies = datum.getTime() - personen.get(person).getImpfungen().getImpfTermin().getTime();
             long diffInDays = TimeUnit.DAYS.convert(timeDifferenceInMillies, TimeUnit.MILLISECONDS);
+
+
             if(diffInDays > 20){
                 firstPriority.add(personen.get(person));
             } else {
