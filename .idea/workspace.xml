@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb653aab-a662-4338-aabb-26251bd881dd" name="Changes" comment="d">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Impfung.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImpfzentrumVerwaltung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImpfzentrumVerwaltung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Aufgaben" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Notes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Starter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +75,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joshu\IdeaProjects\JJ_LA21-DVTE-LK-B-AUFG_Loesung\src\main\resources\BearbeiteteAufgaben" />
       <recent name="C:\Users\joshu\IdeaProjects\JJ_LA21-DVTE-LK-B-AUFG_Loesung\src\main\resources" />
     </key>
   </component>
@@ -108,7 +112,8 @@
       <workItem from="1720433991557" duration="1092000" />
       <workItem from="1720435415478" duration="614000" />
       <workItem from="1722880067570" duration="1620000" />
-      <workItem from="1723038553923" duration="2686000" />
+      <workItem from="1723038553923" duration="4224000" />
+      <workItem from="1723120142894" duration="4682000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <option name="closed" value="true" />
@@ -118,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722886567285</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="d">
+      <option name="closed" value="true" />
+      <created>1723043807614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723043807614</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

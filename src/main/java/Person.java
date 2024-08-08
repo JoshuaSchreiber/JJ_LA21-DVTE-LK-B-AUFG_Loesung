@@ -13,6 +13,7 @@ public class Person {
     private boolean risiko;
     private boolean einverstaendnis;
     private int anzahlImpfungen;
+    private Impfung impfungen;
 
     public Person(String contentCSVDatei){
         String[] parts = contentCSVDatei.split(";");
@@ -27,6 +28,20 @@ public class Person {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+    }
+
+    public Person(int personenID, String nachname, String vorname, Date gebDate, String plz, String ort, String strasse, boolean risiko, boolean einverstaendnis, int anzahlImpfungen, Impfung impfungen) {
+        this.personenID = personenID;
+        this.nachname = nachname;
+        this.vorname = vorname;
+        this.gebDate = gebDate;
+        this.plz = plz;
+        this.ort = ort;
+        this.strasse = strasse;
+        this.risiko = risiko;
+        this.einverstaendnis = einverstaendnis;
+        this.anzahlImpfungen = anzahlImpfungen;
+        this.impfungen = impfungen;
     }
 
     public String toString(){
@@ -111,5 +126,13 @@ public class Person {
 
     public void setAnzahlImpfungen(int anzahlImpfungen) {
         this.anzahlImpfungen = anzahlImpfungen;
+    }
+
+    public Impfung getImpfungen() {
+        return impfungen;
+    }
+
+    public void setImpfungen(Impfung impfungen) {
+        this.impfungen = impfungen;
     }
 }
