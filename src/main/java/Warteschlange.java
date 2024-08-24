@@ -3,26 +3,47 @@ import java.util.Queue;
 
 public class Warteschlange {
     private int anzahlPersonen;
-    private Queue<Person> queue;
+    private static Queue<Person> queue;
     ;
-    public Warteschlange(){
-        this.personen = new LinkedList<>();
+
+    public Warteschlange() {
+        this.queue = new LinkedList<>();
     }
 
-    public void hinzufuegen(Person personNeu){
-        if (Person != null) {
-            queue.add(Person);
-            System.out.println(person.getName() + " wurde zur Warteschlange hinzugefügt.");
-        } else {
-            System.out.println("Es kann nur eine gültige Person zur Warteschlange hinzugefügt werden.");
+    public void hinzufuegen(Person personNeu) {
+        if (personNeu != null) {
+            queue.add(personNeu);
         }
     }
 
-    public Person entfernen(){
+    public Person entfernen() {
+        if (!queue.isEmpty()) {
+            Person person = queue.poll();
+            return person;
+        }
+        return null; // Rückgabe null, wenn die Warteschlange leer ist
+    }
+
+    public Person loeschen(int personenID) {
+        if (!queue.isEmpty()) {
+            Person person = null;
+            for (Person p : queue) {
+                if (p.getPersonenID() == personenID) {
+                    person = p;
+                    queue.remove(p);
+                    break;
+                }
+            }
+            return person;
+        }
         return null;
     }
 
-    public Person löschen(){
-        return null;
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (Person p : queue) {
+            sb.append(p.toString()).append("\n");
+        }
+        return sb.toString();
     }
 }

@@ -72,8 +72,19 @@ public class Starter {
             System.out.println();
         }
     }
-    public static void number1s4(){
 
+    public static void number1s4(){
+        Warteschlange warteschlange = new Warteschlange();
+        Impfstrasse impfstrasse = new Impfstrasse(1, warteschlange);
+        impfstrasse.getWarteschlange().hinzufuegen(personen.get(0));
+        impfstrasse.getWarteschlange().hinzufuegen(personen.get(1));
+        impfstrasse.getWarteschlange().hinzufuegen(personen.get(2));
+        impfstrasse.getWarteschlange().hinzufuegen(personen.get(3));
+        System.out.println("Diese Personen sind in der Warteschlange: " + warteschlange);
+        warteschlange.entfernen();
+        System.out.println("Diese Personen sind in der Warteschlange: " + warteschlange);
+        warteschlange.loeschen(77667);
+        System.out.println("Diese Personen sind in der Warteschlange: " + warteschlange);
     }
 
 }
