@@ -9,12 +9,13 @@ import java.util.concurrent.TimeUnit;
 public class Starter {
 
     private static List<Person> personen;
-    public static void Number1s1(){
+
+    public static void number1s1(){
         Person person = new Person("77665;Müller;Klaus;31.12.1980;35334;Hausen;Teichweg 8;1 ");
         System.out.println(person.toString());
     }
 
-    public static void Number1s3() throws ParseException {
+    public static void number1s3() throws ParseException {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
          personen = new ArrayList<>();
 
@@ -71,6 +72,9 @@ public class Starter {
             System.out.println();
             System.out.println();
         }
+    }
+    public static void number1s4(){
+
     }
 
 }
