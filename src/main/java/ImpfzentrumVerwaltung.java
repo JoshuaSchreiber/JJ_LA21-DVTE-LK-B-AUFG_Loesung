@@ -31,14 +31,12 @@ public class ImpfzentrumVerwaltung {
         for(int person = 0; person < personen.size(); person++){
 
             // Time sine last ImpfTermin
-            long timeDifferenceInMillies = datum.getTime() - personen.get(person).getImpfungen().getImpfTermin().getTime();
-            long diffInDays = TimeUnit.DAYS.convert(timeDifferenceInMillies, TimeUnit.MILLISECONDS);
-
+            int diffInDays = getDiffInDays(datum, person, personen);
 
             if(diffInDays > 20){
                 firstPriority.add(personen.get(person));
             } else {
-                long age = datum.getTime() - personen.get(person).getGebDate().getTime();
+                long age = getAge(datum, personen.get(person));
                 if(personen.get(person).isRisiko()){
                     age = age*2;
                 }
@@ -48,7 +46,7 @@ public class ImpfzentrumVerwaltung {
                 int i = 0;
                 boolean added = false;
                 while (i < secondPriority.size() && !added) {
-                    long secondPriorityPositionAge = datum.getTime() - secondPriority.get(i).getGebDate().getTime();
+                    long secondPriorityPositionAge = getAge(datum, secondPriority.get(i));
                     if (secondPriority.get(i).isRisiko()) {
                         secondPriorityPositionAge = secondPriorityPositionAge * 2;
                     }
@@ -65,16 +63,28 @@ public class ImpfzentrumVerwaltung {
 
         List<Person> impfListe = new ArrayList<>();
         for(int i = 0; i < impfkapazitaet; i++){
-            if(firstPriority.size()-1 >= i){
+            if(firstPriority.size() > i){
                 impfListe.add(firstPriority.get(i));
-            } else if(secondPriority.size()-1 >= i-firstPriority.size()){
-                impfListe.add(secondPriority.get(i-firstPriority.size()));
+            } else if (secondPriority.size() > i-firstPriority.size()){
+                impfListe.add(i, secondPriority.get(i-firstPriority.size()));
             }
         }
 
         return impfListe;
 
     }
+
+    public static int getDiffInDays(Date datum, int personNumber, List<Person> personen){
+        long timeDifferenceInMillies = datum.getTime() - personen.get(personNumber).getImpfungen().getImpfTermin().getTime();
+        long diffInDays = TimeUnit.DAYS.convert(timeDifferenceInMillies, TimeUnit.MILLISECONDS);
+        return (int)diffInDays;
+    }
+
+    public static long getAge(Date datum, Person person){
+        long age = datum.getTime() - person.getGebDate().getTime();
+        return age;
+    }
+
 
     public List<Person> getPersonen() {
         return personen;
