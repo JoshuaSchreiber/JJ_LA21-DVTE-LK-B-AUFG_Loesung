@@ -59,14 +59,13 @@ public class Starter {
         for(int i = 0; i < einladungsListe.size(); i++){
             System.out.println(i);
 
-            long timeDifferenceInMillies = datum.getTime() - personen.get(i).getImpfungen().getImpfTermin().getTime();
-            long diffInDays = TimeUnit.DAYS.convert(timeDifferenceInMillies, TimeUnit.MILLISECONDS);
+            int diffInDays = ImpfzentrumVerwaltung.getDiffInDays(datum, i, einladungsListe);
             System.out.println("Time since last Impfung: " + diffInDays);
-            System.out.println("Last Impfung: " + personen.get(i).getImpfungen().getImpfTermin());
+            System.out.println("Last Impfung: " + einladungsListe.get(i).getImpfungen().getImpfTermin());
 
-            long ageInMillis = datum.getTime() - personen.get(i).getGebDate().getTime();
+            long ageInMillis = datum.getTime() - einladungsListe.get(i).getGebDate().getTime();
             long ageInDays = TimeUnit.DAYS.convert(ageInMillis, TimeUnit.MILLISECONDS);
-            System.out.println("Age in days: " + ageInDays + "  Risiko: " + personen.get(i).isRisiko());
+            System.out.println("Age in days: " + ageInDays + "  Risiko: " + einladungsListe.get(i).isRisiko());
             System.out.println("Birthday: " + einladungsListe.get(i).getGebDate());
 
             System.out.println();
