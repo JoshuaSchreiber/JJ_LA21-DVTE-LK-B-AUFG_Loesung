@@ -74,7 +74,7 @@ public class Starter {
         }
     }
     public static void number1s4(){
-        //Hello
+
     }
 
 }
