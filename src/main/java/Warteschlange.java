@@ -21,7 +21,7 @@ public class Warteschlange {
             Person person = queue.poll();
             return person;
         }
-        return null; // Rückgabe null, wenn die Warteschlange leer ist
+        return null;
     }
 
     public Person loeschen(int personenID) {
