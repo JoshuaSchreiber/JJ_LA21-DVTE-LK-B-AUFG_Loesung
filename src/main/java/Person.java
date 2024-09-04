@@ -24,10 +24,17 @@ public class Person {
         String dateStr = parts[3];
         SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
         try {
+            //Testen ob Datum Valide (in den letzten Hundert Jahren)
             gebDate = formatter.parse(dateStr);
+            if(!ImpfzentrumVerwaltung.pruefeDatum(gebDate)){
+                gebDate = null;
+            }
         } catch (ParseException e) {
             e.printStackTrace();
         }
+
+
+
     }
 
     public Person(int personenID, String nachname, String vorname, Date gebDate, String plz, String ort, String strasse, boolean risiko, boolean einverstaendnis, int anzahlImpfungen, Impfung impfungen) {

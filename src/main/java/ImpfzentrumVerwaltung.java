@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -83,6 +84,15 @@ public class ImpfzentrumVerwaltung {
     public static long getAge(Date datum, Person person){
         long age = datum.getTime() - person.getGebDate().getTime();
         return age;
+    }
+
+    public static boolean pruefeDatum(Date date) {
+        Calendar today = Calendar.getInstance();
+
+        Calendar hundredYearsAgo = Calendar.getInstance();
+        hundredYearsAgo.add(Calendar.YEAR, -100);
+
+        return date.after(hundredYearsAgo.getTime()) && date.before(today.getTime());
     }
 
 
