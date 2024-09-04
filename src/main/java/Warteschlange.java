@@ -24,11 +24,11 @@ public class Warteschlange {
         return null;
     }
 
-    public Person loeschen(int personenID) {
+    public Person loeschen(int personID) {
         if (!queue.isEmpty()) {
             Person person = null;
             for (Person p : queue) {
-                if (p.getPersonenID() == personenID) {
+                if (p.getPersonenID() == personID) {
                     person = p;
                     queue.remove(p);
                     break;
