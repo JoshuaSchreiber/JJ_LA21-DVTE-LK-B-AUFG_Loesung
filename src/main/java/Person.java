@@ -30,7 +30,7 @@ public class Person {
         String dateStr = parts[3];
         SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
         try {
-            //Testen ob Datum Valide (in den letzten 150 Jahren)
+            //Testen, ob Datum Valide (in den letzten 150 Jahren)
             gebDate = formatter.parse(dateStr);
             if(!ImpfzentrumVerwaltung.pruefeDatum(gebDate)){
                 gebDate = null;
@@ -43,7 +43,7 @@ public class Person {
         plz = parts[4];
         ort = parts[5];
 
-        //Straße und Hausnummer aufteilen und zuweisen
+        // Straße und Hausnummer aufteilen und zuweisen
         String[] ortUndHausnummer = parts[6].split(" ");
         strasse = ortUndHausnummer[0];
         hausnummer = ortUndHausnummer[1];

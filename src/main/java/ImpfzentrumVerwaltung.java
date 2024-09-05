@@ -19,14 +19,14 @@ public class ImpfzentrumVerwaltung {
 
     public List<Person> einladen(Date datum){
 
-        // Gesammt Impfkapazität am Tag
+        // Gesamt Impfkapazität am Tag
         int impfkapazitaet = STRASSEN * PERSONEN_TAG_STRASSE;
 
         // Lehre Listen für 1. und 2. Priorität
         List<Person> firstPriority = new ArrayList<>();
         List<Person> secondPriority = new ArrayList<>();
 
-        // Alle Personen Durch gehen
+        // Alle Personen durchlaufen
         for(int person = 0; person < personen.size(); person++){
 
             // Zeit seit letztem Impftermin feststellen
@@ -42,16 +42,16 @@ public class ImpfzentrumVerwaltung {
                 // Alter der Person festellen
                 long age = getAge(datum, personen.get(person));
 
-                // Alter verdoppeln wenn die Person in einer Risikogruppe ist
+                // Alter verdoppeln, wenn die Person in einer Risikogruppe ist
                 if(personen.get(person).isRisiko()){
                     age = age*2;
                 }
 
-                // Wenn die Liste für die zweite Priorität noch lehr ist einfach so hinzufügen
+                // Wenn die Liste für die zweite Priorität noch leer ist einfach so hinzufügen
                 if(secondPriority.isEmpty()){
                     secondPriority.add(personen.get(person));
 
-                // Wenn die  Liste für die zweite Priorität nicht lehr ist einordnen
+                // Wenn die Liste für die zweite Priorität nicht leer ist einordnen
                 } else {
 
                     // Solange Elemente in der Liste ist und das Element noch nicht hinzugefügt wurde
@@ -66,12 +66,12 @@ public class ImpfzentrumVerwaltung {
                             secondPriorityPositionAge = secondPriorityPositionAge * 2;
                         }
 
-                        // Vergleichen und an der Angegebenen Stelle hinzufügen notieren
+                        // Vergleichen und an der angegebenen Stelle hinzufügen notieren
                         if (secondPriorityPositionAge < age) {
                             secondPriority.add(i, personen.get(person));
                             added = true;
 
-                        // Wenn noch nicht hginzugefügt für nächste Runde auf neue Stelle testen
+                        // Wenn noch nicht hinzugefügt für nächste Runde auf neue Stelle testen
                         } else {
                             i++;
                         }
@@ -84,7 +84,7 @@ public class ImpfzentrumVerwaltung {
         }
 
 
-        // ERste und Zweite Impfliste nacheinander solange adden wie die Gesamte Tageskapazität noch nicht erreicht ist
+        // Erste und Zweite Impfliste nacheinander solange adden wie die Gesamte Tageskapazität noch nicht erreicht ist
         List<Person> impfListe = new ArrayList<>();
         for(int i = 0; i < impfkapazitaet; i++){
             if(firstPriority.size() > i){
