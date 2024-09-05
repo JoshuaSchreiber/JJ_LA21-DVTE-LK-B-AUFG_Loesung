@@ -84,14 +84,25 @@ public class ImpfzentrumVerwaltung {
         }
 
 
+        // How many persons can be added to the list?
+        int personCountToAdd = 0;
+        if(impfkapazitaet > personen.size()){
+            personCountToAdd = personen.size();
+        } else{
+            personCountToAdd = impfkapazitaet;
+        }
+
         // Erste und Zweite Impfliste nacheinander solange adden wie die Gesamte Tageskapazität noch nicht erreicht ist
         List<Person> impfListe = new ArrayList<>();
-        for(int i = 0; i < impfkapazitaet; i++){
+        for(int i = 0; i < personCountToAdd; i++){
             if(firstPriority.size() > i){
                 impfListe.add(firstPriority.get(i));
             } else if (secondPriority.size() > i-firstPriority.size()){
                 impfListe.add(i, secondPriority.get(i-firstPriority.size()));
             }
+        }
+        for(int i = 0; i < impfListe.size(); i++){
+            System.out.println(impfListe.get(i).isRisiko());
         }
 
         return impfListe;

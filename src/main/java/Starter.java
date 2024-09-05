@@ -62,7 +62,7 @@ public class Starter {
         List<Person> einladungsListe = impfzentrumVerwaltung.einladen(datum);
 
         for(int i = 0; i < einladungsListe.size(); i++){
-            System.out.println(i);
+            System.out.println(i+1);
 
             int diffInDays = ImpfzentrumVerwaltung.getDiffInDays(datum, i, einladungsListe);
             System.out.println("Time since last Impfung: " + diffInDays);
