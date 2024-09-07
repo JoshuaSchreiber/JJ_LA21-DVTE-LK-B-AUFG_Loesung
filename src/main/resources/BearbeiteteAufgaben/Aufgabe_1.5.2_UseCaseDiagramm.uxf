@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>13</zoom_level>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>312</x>
-      <y>0</y>
-      <w>1170</w>
-      <h>1157</h>
-    </coordinates>
-    <panel_attributes>System
-halign=left</panel_attributes>
-    <additional_attributes/>
-  </element>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>403</x>
-      <y>338</y>
-      <w>156</w>
-      <h>52</h>
+      <x>372</x>
+      <y>450</y>
+      <w>72</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Person anmelden</panel_attributes>
     <additional_attributes/>
@@ -27,10 +15,10 @@ halign=left</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>403</x>
-      <y>208</y>
-      <w>156</w>
-      <h>52</h>
+      <x>372</x>
+      <y>390</y>
+      <w>72</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Termin vergeben</panel_attributes>
     <additional_attributes/>
@@ -38,10 +26,10 @@ halign=left</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>793</x>
-      <y>234</y>
-      <w>208</w>
-      <h>117</h>
+      <x>552</x>
+      <y>402</y>
+      <w>96</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>Termin überprüfen
 --
@@ -52,10 +40,10 @@ valign=top</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>637</x>
-      <y>78</y>
-      <w>169</w>
-      <h>91</h>
+      <x>480</x>
+      <y>330</y>
+      <w>78</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>condition:
 kein Termin?</panel_attributes>
@@ -64,10 +52,10 @@ kein Termin?</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>104</x>
-      <y>234</y>
-      <w>156</w>
-      <h>143</h>
+      <x>228</x>
+      <y>402</y>
+      <w>66</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>Empfangskraft</panel_attributes>
     <additional_attributes/>
@@ -75,10 +63,10 @@ kein Termin?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>546</x>
-      <y>221</y>
-      <w>273</w>
-      <h>78</h>
+      <x>438</x>
+      <y>396</y>
+      <w>126</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extend&gt;&gt;</panel_attributes>
@@ -87,10 +75,10 @@ kein Termin?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>546</x>
-      <y>286</y>
-      <w>273</w>
-      <h>104</h>
+      <x>438</x>
+      <y>426</y>
+      <w>126</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;include&gt;&gt;</panel_attributes>
@@ -99,21 +87,21 @@ kein Termin?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>702</x>
-      <y>156</y>
-      <w>52</w>
-      <h>130</h>
+      <x>516</x>
+      <y>366</y>
+      <w>18</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>20.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>221</x>
-      <y>221</y>
-      <w>208</w>
-      <h>78</h>
+      <x>288</x>
+      <y>396</y>
+      <w>96</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes>10.0;40.0;140.0;10.0</additional_attributes>
@@ -121,10 +109,10 @@ kein Termin?</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>221</x>
-      <y>299</y>
-      <w>208</w>
-      <h>91</h>
+      <x>288</x>
+      <y>432</y>
+      <w>96</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes>10.0;10.0;140.0;50.0</additional_attributes>
@@ -132,21 +120,21 @@ kein Termin?</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>52</x>
-      <y>585</y>
-      <w>260</w>
-      <h>143</h>
+      <x>204</x>
+      <y>570</y>
+      <w>96</w>
+      <h>66</h>
     </coordinates>
-    <panel_attributes>Medizinische Fachkraft (MF)</panel_attributes>
+    <panel_attributes>Medizinische Fachkraft </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>767</x>
-      <y>949</y>
-      <w>156</w>
-      <h>52</h>
+      <x>438</x>
+      <y>678</y>
+      <w>72</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Person abmelden</panel_attributes>
     <additional_attributes/>
@@ -154,21 +142,10 @@ kein Termin?</panel_attributes>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>598</x>
-      <y>598</y>
-      <w>221</w>
-      <h>52</h>
-    </coordinates>
-    <panel_attributes>Impfpasseintrag erstellen</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>1105</x>
-      <y>754</y>
-      <w>273</w>
-      <h>65</h>
+      <x>690</x>
+      <y>516</y>
+      <w>126</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>Impfbescheinigung drucken 
 und ausstellen</panel_attributes>
@@ -177,332 +154,238 @@ und ausstellen</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>143</x>
-      <y>975</y>
-      <w>78</w>
-      <h>143</h>
+      <x>240</x>
+      <y>798</y>
+      <w>36</w>
+      <h>66</h>
     </coordinates>
-    <panel_attributes>Arzt (A)</panel_attributes>
+    <panel_attributes>Arzt 
+group=group-0</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>364</x>
-      <y>988</y>
-      <w>221</w>
-      <h>52</h>
-    </coordinates>
-    <panel_attributes>Impftauglichkeit prüfen</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>611</x>
-      <y>806</y>
-      <w>377</w>
-      <h>52</h>
+      <x>432</x>
+      <y>858</y>
+      <w>174</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Impfreaktion und Arzt im System eintragen</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>806</x>
-      <y>611</y>
-      <w>468</w>
-      <h>169</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;extend&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;340.0;110.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1079</x>
-      <y>494</y>
-      <w>234</w>
-      <h>91</h>
+      <x>600</x>
+      <y>564</y>
+      <w>150</w>
+      <h>30</h>
     </coordinates>
-    <panel_attributes>Impfpass nicht vorhanden</panel_attributes>
+    <panel_attributes>condition: Impfpass nicht vorhanden
+extension points: Kein Pass</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1105</x>
-      <y>572</y>
-      <w>91</w>
-      <h>169</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;110.0;50.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>390</x>
-      <y>598</y>
-      <w>156</w>
-      <h>52</h>
+      <x>540</x>
+      <y>678</y>
+      <w>72</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Person impfen</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>786</y>
+      <w>216</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;50.0;340.0;15.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>582</y>
+      <w>324</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;520.0;20.0;520.0;160.0</additional_attributes>
+  </element>
+  <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1625</x>
-      <y>260</y>
-      <w>169</w>
-      <h>91</h>
+      <x>624</x>
+      <y>708</y>
+      <w>108</w>
+      <h>30</h>
     </coordinates>
-    <panel_attributes>Note..
-bg=blue</panel_attributes>
+    <panel_attributes>condition: tauglich
+extension points:</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>342</x>
+      <y>708</y>
+      <w>126</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>condition: untauglich
+extension points: tauglich?
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1508</x>
-      <y>117</y>
-      <w>182</w>
-      <h>52</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>468</x>
-      <y>637</y>
-      <w>117</w>
-      <h>377</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;extend&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;270.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>533</x>
-      <y>611</y>
-      <w>91</w>
-      <h>39</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>832</x>
-      <y>780</y>
-      <w>299</w>
-      <h>52</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>210.0;10.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>208</x>
-      <y>988</y>
-      <w>182</w>
-      <h>52</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>208</x>
-      <y>598</y>
-      <w>208</w>
-      <h>52</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>520</x>
-      <y>728</y>
-      <w>117</w>
-      <h>39</h>
-    </coordinates>
-    <panel_attributes>tauglich</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>468</x>
-      <y>884</y>
-      <w>325</w>
-      <h>117</h>
+      <x>540</x>
+      <y>522</y>
+      <w>162</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 &lt;&lt;extend&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;230.0;70.0</additional_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLNote</id>
+    <id>UMLUseCase</id>
     <coordinates>
-      <x>663</x>
-      <y>1040</y>
-      <w>130</w>
-      <h>39</h>
+      <x>408</x>
+      <y>498</y>
+      <w>138</w>
+      <h>72</h>
     </coordinates>
-    <panel_attributes>untauglich</panel_attributes>
+    <panel_attributes>Impfpasseintrag erstellen
+--
+extension points:
+Kein Pass
+valign=top</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
-      <y>715</y>
-      <w>78</w>
-      <h>52</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;20.0;40.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>650</x>
-      <y>936</y>
-      <w>39</w>
-      <h>169</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>819</x>
-      <y>845</y>
-      <w>39</w>
-      <h>130</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>780</x>
-      <y>676</y>
-      <w>182</w>
-      <h>39</h>
-    </coordinates>
-    <panel_attributes>Impfpass vorhanden</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>689</x>
-      <y>637</y>
+      <x>264</x>
+      <y>528</y>
       <w>156</w>
-      <h>195</h>
+      <h>66</h>
     </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;extend&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;130.0</additional_attributes>
+    <panel_attributes/>
+    <additional_attributes>10.0;90.0;240.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>728</x>
-      <y>676</y>
-      <w>78</w>
-      <h>65</h>
+      <x>264</x>
+      <y>594</y>
+      <w>222</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;30.0;40.0;10.0</additional_attributes>
+    <additional_attributes>10.0;20.0;350.0;20.0;350.0;140.0</additional_attributes>
   </element>
   <element>
-    <id>UMLClass</id>
+    <id>Relation</id>
     <coordinates>
-      <x>455</x>
-      <y>559</y>
-      <w>39</w>
-      <h>39</h>
+      <x>270</x>
+      <y>834</y>
+      <w>174</w>
+      <h>48</h>
     </coordinates>
-    <panel_attributes>MF
-</panel_attributes>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;270.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>474</x>
+      <y>768</y>
+      <w>96</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Impftauglichkeit prüfen
+--
+extension points:
+tauglich?
+valign=top</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLClass</id>
+    <id>Relation</id>
     <coordinates>
-      <x>689</x>
-      <y>559</y>
-      <w>39</w>
-      <h>39</h>
+      <x>546</x>
+      <y>696</y>
+      <w>66</w>
+      <h>90</h>
     </coordinates>
-    <panel_attributes>MF
-</panel_attributes>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extend&gt;&gt;</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>696</y>
+      <w>60</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extend&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>564</x>
+      <y>714</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>714</y>
+      <w>30</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;30.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>318</x>
+      <y>216</y>
+      <w>510</w>
+      <h>750</h>
+    </coordinates>
+    <panel_attributes>Impfzentrum
+halign=left</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLClass</id>
+    <id>Relation</id>
     <coordinates>
-      <x>1235</x>
-      <y>715</y>
-      <w>39</w>
-      <h>39</h>
+      <x>642</x>
+      <y>528</y>
+      <w>18</w>
+      <h>48</h>
     </coordinates>
-    <panel_attributes>MF
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>442</x>
-      <y>949</y>
-      <w>39</w>
-      <h>39</h>
-    </coordinates>
-    <panel_attributes>A
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>728</x>
-      <y>767</y>
-      <w>39</w>
-      <h>39</h>
-    </coordinates>
-    <panel_attributes>A
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>845</x>
-      <y>910</y>
-      <w>39</w>
-      <h>39</h>
-    </coordinates>
-    <panel_attributes>MF
-</panel_attributes>
-    <additional_attributes/>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
 </diagram>

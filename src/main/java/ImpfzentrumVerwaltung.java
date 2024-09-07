@@ -19,10 +19,10 @@ public class ImpfzentrumVerwaltung {
 
     public List<Person> einladen(Date datum){
 
-        // Gesamt Impfkapazität am Tag
+        // Gesamte Impfkapazität am Tag
         int impfkapazitaet = STRASSEN * PERSONEN_TAG_STRASSE;
 
-        // Lehre Listen für 1. und 2. Priorität
+        // Leere Listen für 1. und 2. Priorität
         List<Person> firstPriority = new ArrayList<>();
         List<Person> secondPriority = new ArrayList<>();
 
@@ -36,7 +36,7 @@ public class ImpfzentrumVerwaltung {
             if(diffInDays > 20){
                 firstPriority.add(personen.get(person));
 
-            // Wenn die Person nicht zur 1. Priorität gehört ordner nach zweiter Priorität
+            // Wenn die Person nicht zur 1. Priorität gehört ordne nach zweiter Priorität
             } else {
 
                 // Alter der Person festellen
@@ -84,7 +84,7 @@ public class ImpfzentrumVerwaltung {
         }
 
 
-        // How many persons can be added to the list?
+        //Wie viele Personen können zur Liste hinzugefügt werden?
         int personCountToAdd = 0;
         if(impfkapazitaet > personen.size()){
             personCountToAdd = personen.size();
@@ -92,7 +92,7 @@ public class ImpfzentrumVerwaltung {
             personCountToAdd = impfkapazitaet;
         }
 
-        // Erste und Zweite Impfliste nacheinander solange adden wie die Gesamte Tageskapazität noch nicht erreicht ist
+        // Erste und zweite Impfliste nacheinander solange adden wie die gesamte Tageskapazität noch nicht erreicht ist
         List<Person> impfListe = new ArrayList<>();
         for(int i = 0; i < personCountToAdd; i++){
             if(firstPriority.size() > i){

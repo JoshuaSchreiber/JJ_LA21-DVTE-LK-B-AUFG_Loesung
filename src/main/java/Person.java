@@ -30,7 +30,7 @@ public class Person {
         String dateStr = parts[3];
         SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
         try {
-            //Testen, ob Datum Valide (in den letzten 150 Jahren)
+            //Testen, ob Datum valide ist (in den letzten 150 Jahren)
             gebDate = formatter.parse(dateStr);
             if(!ImpfzentrumVerwaltung.pruefeDatum(gebDate)){
                 gebDate = null;
