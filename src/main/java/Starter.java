@@ -17,11 +17,55 @@ public class Starter {
 
     public static void number1s3() throws ParseException {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-         personen = new ArrayList<>();
+        addPeople(dateFormat);
+
+        Date datum = dateFormat.parse("2024-08-08");
+        ImpfzentrumVerwaltung impfzentrumVerwaltung = new ImpfzentrumVerwaltung(personen, new ArrayList<>());
+        List<Person> einladungsListe = impfzentrumVerwaltung.einladen(datum);
+
+        for(int i = 0; i < einladungsListe.size(); i++){  // Testausgabe der einlaadungsListe
+            System.out.println(i+1);
+
+            int diffInDays = ImpfzentrumVerwaltung.getDiffInDays(datum, i, einladungsListe);
+            System.out.println("Time since last Impfung: " + diffInDays);
+            System.out.println("Last Impfung: " + einladungsListe.get(i).getImpfungen().getImpfTermin());
+
+            long ageInMillis = datum.getTime() - einladungsListe.get(i).getGebDate().getTime();
+            long ageInDays = TimeUnit.DAYS.convert(ageInMillis, TimeUnit.MILLISECONDS);
+            System.out.println("Age in days: " + ageInDays + "  Risiko: " + einladungsListe.get(i).isRisiko());
+            System.out.println("Birthday: " + einladungsListe.get(i).getGebDate());
+
+            System.out.println();
+            System.out.println();
+        }
+    }
+
+    public static void number1s4() throws ParseException {
+        personen = null;
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        addPeople(dateFormat);
+
+
+        Warteschlange warteschlange = new Warteschlange();
+        Impfstrasse impfstrasse = new Impfstrasse(1, warteschlange);
+        impfstrasse.getWarteschlange().hinzufuegen(personen.get(0));
+        impfstrasse.getWarteschlange().hinzufuegen(personen.get(1));
+        impfstrasse.getWarteschlange().hinzufuegen(personen.get(2));
+        impfstrasse.getWarteschlange().hinzufuegen(personen.get(3));
+        System.out.println("Diese Personen sind in der Warteschlange: " + warteschlange);
+        warteschlange.entfernen();
+        System.out.println("Diese Personen sind in der Warteschlange: " + warteschlange);
+        warteschlange.loeschen(77667);
+        System.out.println("Diese Personen sind in der Warteschlange: " + warteschlange);
+    }
+
+
+    public static void addPeople(SimpleDateFormat dateFormat) throws ParseException {
+
+        personen = new ArrayList<>();
 
         Date baseDate = dateFormat.parse("2024-08-08");
         Random random = new Random();
-
         personen.add(new Person(77666, "Schmidt", "Anna", dateFormat.parse("1990-05-20"), "10115", "Berlin", "Alexanderplatz 1", false, true, 1, new Impfung(Helper.getRandomDate(baseDate, true, random))));
         personen.add(new Person(77667, "Schneider", "Paul", dateFormat.parse("1985-03-15"), "20095", "Hamburg", "Mönckebergstraße 10", false, false, 3, new Impfung(Helper.getRandomDate(baseDate, false, random))));
         personen.add(new Person(77668, "Fischer", "Maria", dateFormat.parse("1992-07-10"), "80331", "München", "Marienplatz 5", true, true, 2, new Impfung(Helper.getRandomDate(baseDate, true, random))));
@@ -56,40 +100,6 @@ public class Starter {
         personen.add(new Person(77692, "Böhm", "Clara", dateFormat.parse("1993-03-17"), "01069", "Dresden", "Wilsdruffer Straße 5", true, true, 2, new Impfung(Helper.getRandomDate(baseDate, true, random))));
         personen.add(new Person(77693, "Brandt", "Hannah", dateFormat.parse("1984-12-05"), "14467", "Potsdam", "Brandenburger Straße 7", false, false, 1, new Impfung(Helper.getRandomDate(baseDate, false, random))));
         personen.add(new Person(77694, "Vogel", "Leon", dateFormat.parse("1977-06-02"), "50667", "Köln", "Hohe Straße 11", true, true, 3, new Impfung(Helper.getRandomDate(baseDate, true, random))));
-
-        Date datum = dateFormat.parse("2024-08-08");
-        ImpfzentrumVerwaltung impfzentrumVerwaltung = new ImpfzentrumVerwaltung(personen, new ArrayList<>());
-        List<Person> einladungsListe = impfzentrumVerwaltung.einladen(datum);
-
-        for(int i = 0; i < einladungsListe.size(); i++){
-            System.out.println(i+1);
-
-            int diffInDays = ImpfzentrumVerwaltung.getDiffInDays(datum, i, einladungsListe);
-            System.out.println("Time since last Impfung: " + diffInDays);
-            System.out.println("Last Impfung: " + einladungsListe.get(i).getImpfungen().getImpfTermin());
-
-            long ageInMillis = datum.getTime() - einladungsListe.get(i).getGebDate().getTime();
-            long ageInDays = TimeUnit.DAYS.convert(ageInMillis, TimeUnit.MILLISECONDS);
-            System.out.println("Age in days: " + ageInDays + "  Risiko: " + einladungsListe.get(i).isRisiko());
-            System.out.println("Birthday: " + einladungsListe.get(i).getGebDate());
-
-            System.out.println();
-            System.out.println();
-        }
-    }
-
-    public static void number1s4(){
-        Warteschlange warteschlange = new Warteschlange();
-        Impfstrasse impfstrasse = new Impfstrasse(1, warteschlange);
-        impfstrasse.getWarteschlange().hinzufuegen(personen.get(0));
-        impfstrasse.getWarteschlange().hinzufuegen(personen.get(1));
-        impfstrasse.getWarteschlange().hinzufuegen(personen.get(2));
-        impfstrasse.getWarteschlange().hinzufuegen(personen.get(3));
-        System.out.println("Diese Personen sind in der Warteschlange: " + warteschlange);
-        warteschlange.entfernen();
-        System.out.println("Diese Personen sind in der Warteschlange: " + warteschlange);
-        warteschlange.loeschen(77667);
-        System.out.println("Diese Personen sind in der Warteschlange: " + warteschlange);
     }
 
 }

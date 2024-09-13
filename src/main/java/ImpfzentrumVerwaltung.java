@@ -101,9 +101,6 @@ public class ImpfzentrumVerwaltung {
                 impfListe.add(i, secondPriority.get(i-firstPriority.size()));
             }
         }
-        for(int i = 0; i < impfListe.size(); i++){
-            System.out.println(impfListe.get(i).isRisiko());
-        }
 
         return impfListe;
 
